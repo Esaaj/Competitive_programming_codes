@@ -1,0 +1,9 @@
+user_str=input()
+length=int(input())
+a_count=user_str.count('a')
+str_length=len(user_str)
+cap_space=int(length/str_length)
+answer=a_count*cap_space
+remaining_length=length-cap_space*str_length
+answer=answer+user_str[0:remaining_length].count('a')
+print(answer)
